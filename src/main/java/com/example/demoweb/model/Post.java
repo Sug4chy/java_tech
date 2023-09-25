@@ -1,5 +1,7 @@
 package com.example.demoweb.model;
 
+import java.util.Date;
+
 public class Post {
     private String text;
 
@@ -12,7 +14,14 @@ public class Post {
         return this.likes;
     }
 
-    public Post(String text) {
+    private Date creationDate;
+
+    public Date getCreationDate() {
+        return this.creationDate;
+    }
+
+    public Post(String text, Date creationDate) {
         this.text = text;
+        this.creationDate = creationDate;
     }
 }

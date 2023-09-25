@@ -17,6 +17,7 @@ public class PostsViewController {
     @RequestMapping(path = "/", method = RequestMethod.GET)
     public String list(Model model) {
         var posts = postService.listAllPosts();
+        model.addAttribute("appName", "Сентябрь горит");
         model.addAttribute("posts", posts);
         return "list";
     }
