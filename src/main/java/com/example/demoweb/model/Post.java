@@ -3,7 +3,7 @@ package com.example.demoweb.model;
 import java.util.Date;
 
 public class Post {
-    private String text;
+    private final String text;
 
     public String getText(){
         return this.text;
@@ -14,7 +14,7 @@ public class Post {
         return this.likes;
     }
 
-    private Date creationDate;
+    private final Date creationDate;
 
     public Date getCreationDate() {
         return this.creationDate;
