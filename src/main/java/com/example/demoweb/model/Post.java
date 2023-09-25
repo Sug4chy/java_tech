@@ -14,13 +14,24 @@ public class Post {
         return this.likes;
     }
 
+    public void setLikes(int likes) {
+        this.likes = likes;
+    }
+
     private final Date creationDate;
 
     public Date getCreationDate() {
         return this.creationDate;
     }
 
-    public Post(String text, Date creationDate) {
+    private final Long id;
+
+    public Long getId() {
+        return id;
+    }
+
+    public Post(Long id, String text, Date creationDate) {
+        this.id = id;
         this.text = text;
         this.creationDate = creationDate;
     }

@@ -19,6 +19,6 @@ public class PostService {
     }
 
     public void create(String text) {
-        this.posts.add(new Post(text, new Date()));
+        this.posts.add(new Post((long) posts.size(), text, new Date()));
     }
 }
